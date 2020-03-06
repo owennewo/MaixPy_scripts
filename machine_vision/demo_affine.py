@@ -7,7 +7,7 @@ lcd.init()
 
 sensor.reset(freq=24000000)
 sensor.set_pixformat(sensor.RGB565)
-sensor.set_framesize(sensor.QVGA)
+sensor.set_framesize(sensor.QQVGA)
 
 
 matrix = image.get_affine_transform([(0,0), (240, 0), (240, 240)], [(60,60), (240, 0), (220, 200)])
@@ -23,7 +23,7 @@ try:
 except Exception:
     pass
 
-img2 = image.Image(size=(320, 240))
+img2 = image.Image(size=(160, 120))
 img2.pix_to_ai()
 flag = False
 while 1:

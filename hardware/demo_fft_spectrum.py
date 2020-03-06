@@ -4,8 +4,8 @@ from board import board_info
 from fpioa_manager import fm
 
 sample_rate = 38640
-sample_points = 1024
-fft_points = 512
+sample_points = 512 # 1024
+fft_points = 256 # 512
 hist_x_num = 50
 
 

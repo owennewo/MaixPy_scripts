@@ -18,21 +18,21 @@ while True:
     img=sensor.snapshot()
     img.conv3(edge)
     lcd.display(img)
-    if time.time() -tim >10:
+    if time.time() -tim >1000:
         break
 tim = time.time()
 while True:
     img=sensor.snapshot()
     img.conv3(sharp)
     lcd.display(img)
-    if time.time() -tim >10:
+    if time.time() -tim >2000:
         break
 tim = time.time()
 while True:
     img=sensor.snapshot()
     img.conv3(relievo)
     lcd.display(img)
-    if time.time() -tim >10:
+    if time.time() -tim >3000:
         break
 
 lcd.clear()
